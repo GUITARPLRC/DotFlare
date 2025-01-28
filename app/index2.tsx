@@ -50,7 +50,7 @@ const Home = () => {
 	})
 
 	const touchHandler = (event: any) => {
-		Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Rigid)
+		// Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Rigid)
 		if (event[0] && event[0][0] && event[0][0].type === 0) {
 			// set new center for sweep gradient
 			centerLeft.value = withTiming(Math.floor(Math.random() * CANVAS_WIDTH))

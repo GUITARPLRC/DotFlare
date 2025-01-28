@@ -1,20 +1,8 @@
 import React from "react"
 import { Dimensions } from "react-native"
-import {
-	Canvas,
-	SweepGradient,
-	vec,
-	RoundedRect,
-	Atlas,
-	rect,
-	useRSXformBuffer,
-	useTexture,
-	Group,
-	Rect,
-} from "@shopify/react-native-skia"
+import { Canvas, Atlas, rect, useRSXformBuffer, useTexture, Rect } from "@shopify/react-native-skia"
 import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context"
-import { useDerivedValue, useSharedValue, withTiming } from "react-native-reanimated"
-import * as Haptics from "expo-haptics"
+import { useSharedValue } from "react-native-reanimated"
 
 const { width: SCREEN_WIDTH } = Dimensions.get("window")
 const SQUARE_COUNT_HORIZONTAL = 50
